@@ -1,0 +1,23 @@
+{
+  "name": "scs2rps_profile_migrator",
+  "version": "0.1.0",
+  "description": "A tool to migrate SCS XML profiles to RPS compatible JSON profiles",
+  "main": "scs2rps.js",
+  "dependencies": {
+    "fast-xml-parser": "^3.17.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-primrose/scs2rps_profile_migrator.git"
+  },
+  "author": "Matt C Primrose",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/matt-primrose/scs2rps_profile_migrator/issues"
+  },
+  "homepage": "https://github.com/matt-primrose/scs2rps_profile_migrator#readme"
+}
