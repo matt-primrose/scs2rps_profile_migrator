@@ -58,13 +58,12 @@ function start(argv){
     if (parser.validate(xmlData) === true) {
         jsonObj = parser.parse(xmlData, options);
     }
+
     
 
-    //let tObj = parser.getTraversalObj(xmldata, options);
-    //let jsonObj = parser.convertToJson(tObj, options);
     fs.writeFile(settings.output, JSON.stringify(jsonObj),function(err){
         console.log('File successfully converted.');
-    })
+    });
 }
 
 function showHelp() {

@@ -104,3 +104,7 @@ dist
 .tern-port
 sample.xml
 json.json
+AD_TLS_DHCP.json
+AD_TLS_DHCP.xml
+cira.json
+CIRA.xml
