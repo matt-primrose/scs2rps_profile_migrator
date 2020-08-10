@@ -22,6 +22,7 @@ limitations under the License.
 
 const fs = require('fs');
 const parser = require('fast-xml-parser');
+const migrator = require('./migrator');
 const scs2rpsVersion = "0.1.0";
 let settings = new Object();
 
@@ -59,10 +60,10 @@ function start(argv){
         jsonObj = parser.parse(xmlData, options);
     }
 
-    
-
-    fs.writeFile(settings.output, JSON.stringify(jsonObj),function(err){
-        console.log('File successfully converted.');
+    migrator.migrate(jsonObj, function(rpsProfileObj){
+        fs.writeFile(settings.output, JSON.stringify(rpsProfileObj),function(err){
+            console.log('File successfully converted.');
+        });
     });
 }
 
